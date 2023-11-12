@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUM CALCULATOR</title>
+    <link rel="stylesheet" href="./T2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SUM CALCULATOR</h1>
+        <label for="num_1">Enter first number</label><br>
+        <input type="number" id="num_1" style="width: 300px"><br>
+        <label for="num_2">Enter second number</label><br>
+       <input type="number" id="num_2" style="width: 300px"><br>
+       <button class="btn" onclick="display()">CALCULATE</button>
+       <h1 id="result"></h1>
+       
+
+       
+       
+    </div>
+
+    
+    <script>
+        function display()
+        {
+        let a =document.getElementById("num_1").value
+        let b =document.getElementById("num_2").value
+        var ans = parseFloat(a) + parseFloat(b);
+        document.getElementById("result").innerHTML= ans
+        
+        }
+    </script>
+
+
+
+</body>
+</html>

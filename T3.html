@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="T3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <p>Loan Amount Rs:</p>
+        <input onchange="calculateLoan()"id="amount"class="input" type="number" min="1" max="500000" value="10000">
+        <p>Interest Rate %</p>
+        <input onchange="calculateLoan()"id="interest"class="input" type="number" min="1" max="60" value="14">
+        <p>Months to pay</p>
+        <input onchange="calculateLoan()"id="mnth" class="input" type="number" min="1" max="60" value="12" step="12">
+        <p id="final">Monthly Payment:</p>
+    </div>
+    <script src="T3.js"></script>
+</body>
+</html>
